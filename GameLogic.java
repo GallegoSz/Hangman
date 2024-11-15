@@ -1,23 +1,29 @@
-import java.util.Scanner;
+class GameLogic {
+    private char[] lyrics;
+    private char[] attempts;
 
-public class GameLogic {
+    // Método para definir a palavra secreta
     public String getWord(Scanner scanner) {
-        String word = "";
+        System.out.print("Enter the word to guess: ");
+        return scanner.nextLine().toLowerCase();
+    }
 
-        while (true) {
-            System.out.println("What's your word?");
-            word = scanner.nextLine();
-
-            if (!word.isEmpty() && word.matches("[a-zA-Z]+")) {
-                break;
-            } else {
-                System.out.println("\nPlease enter a valid word (only letters).");
-            }
+    // Inicializa o jogo com a palavra secreta
+    public void initializeGame(String word) {
+        lyrics = word.toCharArray();
+        attempts = new char[word.length()];
+        for (int i = 0; i < attempts.length; i++) {
+            attempts[i] = '_';
         }
-        return word;
     }
 
-    public String checkWord() {
-
+    // Exibe o início do jogo
+    public void displayGameStart() {
+        System.out.println("=====================================");
+        System.out.println("               Hangman               ");
+        System.out.println("=====================================");
+        System.out.println("Secret word = " + String.valueOf(attempts));
     }
+
+    // Outros métodos para adicionar lógica do jogo, como verificar tentativas, etc.
 }
