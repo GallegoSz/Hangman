@@ -32,3 +32,27 @@ The game ends when the odds reach 0 (defeat) or the word is guessed (victory).
 
 ## 📂 **Project Structure**
 
+HangmanGame/
+
+├── src/
+
+│   ├── Hangman.java           
+
+│   ├── GameLogic.java
+
+
+Structure Explanation
+
+**`Hangman.java`**:
+Contains the execution of the game. It manages interaction with the player, showing the current state 
+of the word, the number of attempts remaining and calling the game logic.
+
+**`GameLogic.java`**:
+Contains the logic of the game, such as getting the secret word and checking whether the player won. 
+It is separated from main class to modularize responsibilities.
+
+---
+## ✨ **Author**
+Developed with ❤️ by João Pedro Gallego. Get in touch:
+- jopedrogallego@hotmail.com
+- https://www.linkedin.com/in/joao-pedro-gallego/
