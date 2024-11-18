@@ -9,7 +9,7 @@ and console interaction.
 This project consists of creating an interactive hangman game, developed in Java. Hangman is a 
 guessing game where one player chooses a secret word, and another tries to guess the letters of 
 that word with a limited number of tries. The objective of the project was to recreate this dynamic 
-in a digital way, using initial concepts of modular programming and encapsulation while I am still 
+in a digital way, using initial concepts of modular programming while I am still 
 learning and consolidating these fundamentals.
 
 The game interface is text-based, allowing the user to play directly on the terminal or console. 
